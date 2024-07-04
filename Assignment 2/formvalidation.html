@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form validation</title>
+</head>
+<body>
+    <form method="post">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="phone">Phone</label>
+  <input type="tel" name="phone" id="phone" required pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$">
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
